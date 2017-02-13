@@ -5,6 +5,9 @@ list_data = ["aa",'bbb','cc','dd']
 for i,v in enumerate(list_data):
     print  i,v
 
+for t in list_data:
+    print t
+
 print "-----------------------操作list列表------------------------------------"
 
 list_data.append("ee");print list_data #添加元素
@@ -20,3 +23,4 @@ print list_data.__sizeof__()
 print list_data.__class__
 print list_data.__doc__
 print list_data.__str__()
+print "".join(list_data)

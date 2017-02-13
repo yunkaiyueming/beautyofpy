@@ -32,6 +32,6 @@ print map_data.viewvalues()
 print map_data.__class__
 print map_data.__sizeof__()
 print map_data.__len__()
-
+#del map_data[3]
 #print map_data.clear()
 #print map_data.items()
