@@ -1,1 +1,1 @@
-# pysnippet
+# beauty of py
