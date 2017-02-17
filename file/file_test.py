@@ -24,5 +24,6 @@ print os.path.dirname(new_file)
 print os.path.join("home/ss/","12.txt")
 print os.path.abspath(new_file)
 print os.path.realpath(new_file)
+print os.path.isfile(new_file)
 
 print "fiel_test.py:"+__name__

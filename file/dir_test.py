@@ -15,5 +15,6 @@ print os.path.split(dir_path)
 print os.getenv('path')
 print os.linesep
 #print os.rename(new_dir, dir_path+"file/test2")
+print os.path.exists(dir_path)
 
 print "dir_test.py:"+__name__
