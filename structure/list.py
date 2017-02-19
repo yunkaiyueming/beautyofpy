@@ -8,6 +8,12 @@ for i,v in enumerate(list_data):
 for t in list_data:
     print t
 
+handel_list = [x.upper() for x in list_data]
+print handel_list
+
+if isinstance(handel_list, list):
+        print '是list类型'
+
 print "-----------------------操作list列表------------------------------------"
 
 list_data.append("ee");print list_data #添加元素

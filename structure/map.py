@@ -10,6 +10,9 @@ for k in map_data:
 for k,v in map_data.items():
     print k,v
 
+if not map_data.has_key("tt"):
+        print "not exsit key tt"
+
 print "-------------------------------------------------------------"
 
 #遍历list
