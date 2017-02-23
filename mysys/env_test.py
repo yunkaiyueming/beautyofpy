@@ -12,12 +12,13 @@ def dump(module):
         module = __import__(module)         #非内建模块输出模块路径
         print module.__file__
 
-#print  sys.argv[0], sys.argv[1]
-print sys.builtin_module_names
-print sys._current_frames()
-print sys.platform
-print sys.path
-print sys.modules.keys(),sys.modules.values()
+def test2():
+        #print  sys.argv[0], sys.argv[1]
+        print sys.builtin_module_names
+        print sys._current_frames()
+        print sys.platform
+        print sys.path
+        print sys.modules.keys(),sys.modules.values()
 
-dump("sys")
-dump("pyquery")
+        dump("sys")
+        dump("pyquery")

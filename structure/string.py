@@ -17,3 +17,4 @@ print str.replace("s", "找")
 print str.capitalize()
 print str.find("o")
 print str.count("s")
+print str.isdigit();#是否只有数字组成的字符串

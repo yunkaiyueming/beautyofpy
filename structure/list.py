@@ -1,5 +1,6 @@
 #coding=UTF8
 list_data = ["aa",'bbb','cc','dd']
+list_data2 = ['ee', 'ff', 'gg']
 
 #遍历list
 for i,v in enumerate(list_data):
@@ -29,4 +30,5 @@ print list_data.__sizeof__()
 print list_data.__class__
 print list_data.__doc__
 print list_data.__str__()
-print "".join(list_data)
+print "#".join(list_data)
+print list_data+list_data2

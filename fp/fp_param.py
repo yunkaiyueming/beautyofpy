@@ -32,3 +32,4 @@ print reduce(handel_two_data, list_data)
 print filter(is_odd, list_data)
 print sorted(list_str_data, cmp_ignore_case)
 
+print __name__,__package__,__file__
