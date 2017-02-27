@@ -2,6 +2,11 @@
 
 import sys
 import os
+import mycrypt.common
+from mycrypt import machine #复制到当前模块，这样可以省略mycrypt
+
+print mycrypt.common.my_base64_encode("fdf")
+print machine.get_machine_cpu()
 
 #判断模块是否是内建，并获取模块路径
 def dump(module):
