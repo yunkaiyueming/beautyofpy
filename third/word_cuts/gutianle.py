@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud
+import jieba
+import urllib2
+from PIL import Image
+import numpy as np
+
+abel_mask = np.array(Image.open("alice_mask.png"))
+text_from_text = open("gutianle.txt").read()
+wordlist_after_jieba = jieba.cut(text_from_text, cut_all = True)
+wl_space_split = " ".join(wordlist_after_jieba)
+
+my_wordcloud = WordCloud(background_color="white", mask=abel_mask).generate(wl_space_split)
+
+plt.imshow(my_wordcloud)
+plt.axis("on")
+plt.savefig('gutianle.png')
+#plt.show()

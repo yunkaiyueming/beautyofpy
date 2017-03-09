@@ -1,4 +1,4 @@
-#coding=utf8
+# coding=utf8
 
 code_str = " ['a', 'b','c']"
 list_data = eval(code_str)

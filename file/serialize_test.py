@@ -1,8 +1,8 @@
-#coding=utf8
+# coding=utf8
 import pickle
 import pprint
 
-list_data = ["nihao","我们的","tsfd",1231]
+list_data = ["nihao", "我们的", "tsfd", 1231]
 pprint.pprint(list_data)
 
 serialize_data = pickle.dumps(list_data)
