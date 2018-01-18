@@ -16,5 +16,5 @@ my_wordcloud = WordCloud(background_color="white", mask=abel_mask).generate(wl_s
 
 plt.imshow(my_wordcloud)
 plt.axis("on")
-plt.savefig('sample2.png')
+plt.savefig('sample4.png')
 #plt.show()

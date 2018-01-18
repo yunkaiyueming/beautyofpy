@@ -2,8 +2,9 @@
 import datetime
 
 now = datetime.date.today()
+
 print now
-print now.strftime('%Y-%m-%d')
+print now.strftime('%Y-%m-%d %H:%M:%S')
 print now.strftime('%b %A %B')
 print now.strftime("%Y-%m-%d or %d%b %Y is a %A on the %d day of %B")
 
