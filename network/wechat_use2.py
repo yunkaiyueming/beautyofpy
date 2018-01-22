@@ -7,23 +7,35 @@ import urllib2
 import json
 import time
 
+# 初始化机器人，扫码登陆
+bot = Bot(True)
+
 def start():
+        #send_weather_to_homegroup()
+        add_gaozhong_firend()
+
+def add_gaozhong_firend():
+        my_group = bot.groups().search(u"高中")[0]
+        for me in my_group.members:
+                        print me.name, me.nick_name, me.remark_name,me.display_name, me.is_friend,me.sex
+                        #me.add()
+                        #time.sleep(3)
+
+
+def send_weather_to_homegroup():
         msg = get_all_weather_infos()
         print(msg)
         wx_send_group(msg)
 
 def wx_send_group(msg):
-        # 初始化机器人，扫码登陆
-        bot = Bot(True)
-
         # 搜索名称含有 "游否" 的男性深圳好友
         #my_friend = bot.friends().search(u"小白菜", sex=FEMALE)[0]
         my_friend = bot.groups().search(u"家人相亲相爱")[0]
-        print(my_friend)
+        print my_friend
 
         # 发送文本给好友
-        #my_friend.send(msg)
-        embed()
+        my_friend.send(msg)
+        #embed()
 
 def get_weather_info(url):
         response = urllib2.urlopen(url)
