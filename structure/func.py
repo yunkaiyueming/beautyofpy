@@ -3,6 +3,9 @@
 str_data =  "python"
 str_data2 = ""
 
+def demo_pass():
+        pass
+
 def change_data():
         str_data = "hello" #局部变量
         str_data2 = "11231"
