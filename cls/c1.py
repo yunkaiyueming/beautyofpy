@@ -27,3 +27,18 @@ print(dog1.eal, dog2.eal, Dog.eal)
 
 dog1.set_eal('长尾1')
 print(dog1.eal, dog2.eal, Dog.eal)
+
+
+tinydict = {'name': 'runoob','code':1, 'site': 'www.runoob.com'}
+print (tinydict)          # 输出完整的字典
+print (tinydict.keys())   # 输出所有键
+print (tinydict.values()) # 输出所有值
+
+for x in tinydict:
+    # str = 'k=', x, 'v=',tinydict[x]
+    # print(str)
+    print('k=', x, 'v=',tinydict[x])
+
+str_k = '生如夏花之{a}，死如秋叶之{b}！'.format(b='静美', a='绚烂')
+print(str_k) 
+print('生如夏花之{/静美}，死如秋叶之{绚烂}！')
