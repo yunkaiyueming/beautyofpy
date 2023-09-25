@@ -14,7 +14,6 @@ def getImg(url,idx,path):
 def claw_baidu_img(search):
     # search=input("请输入搜索内容：")
     # number=int(input("请输入需求数量："))
-    
     number=20
     path='baidu/'+search+'/'
     if not os.path.exists(path):

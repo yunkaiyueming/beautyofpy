@@ -1,3 +1,6 @@
 /.idea
 /movie/source/*
 /movie/baidu/*
+*/__pycache__
+*.mp4
+*.mp3
