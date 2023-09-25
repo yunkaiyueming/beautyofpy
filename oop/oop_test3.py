@@ -27,6 +27,6 @@ class Student2(Person):
 
 
 if __name__ == "__main__":
-        stu = Student() #调用未绑定的父类构造方法
+        stu = Student()  #调用未绑定的父类构造方法
         stu2 = Student2() #使用super函数调父类
-        print stu.getName(), stu2.getName()
+        print stu:getName(), stu2.getName()

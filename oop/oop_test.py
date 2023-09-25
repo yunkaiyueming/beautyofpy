@@ -1,4 +1,5 @@
 #coding=utf8
+from __future__ import print_function
 
 class people:
         name = "aa"
@@ -25,24 +26,28 @@ class people:
         def get_class_name():
                 return people.name
 
-print '------------对象调用--------------------'
+print( '------------对象调用--------------------')
 p_obj = people()
 
-print p_obj.name
-print p_obj.age
-#print p_obj.__sex
+print( p_obj.name)
+print( p_obj.age)
+#print( p_obj.__sex)
 
-print p_obj.get_name()
-print p_obj.get_age()
-print p_obj.get_sex()
-print p_obj.get_class_name()
-print p_obj.set_name("zhangsan")
+print( p_obj.get_name())
+print( p_obj.get_age())
+print( p_obj.get_sex())
+print( p_obj.get_class_name())
+p_obj.set_name("zhangsan")
+print(p_obj.get_class_name())
 
-print '--------------类调用--------------------------------'
+p_obj1 = people()
+print(p_obj1.get_name())
 
-print people.name
-print people.age
-#print people.__sex
+print( '--------------类调用--------------------------------')
+
+print( people.name)
+print( people.age)
+#print( people.__sex)
 
 #people.get_name()
 #people.get_sex()
@@ -50,5 +55,5 @@ print people.age
 people.set_name("李四")
 people.get_class_name()
 
-print  people.name
-print p_obj.name
+print(  people.name)
+print( p_obj.name)
